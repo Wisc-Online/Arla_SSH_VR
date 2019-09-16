@@ -11,4 +11,10 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Arla SSH.unity
     guid: 841fe92220323624bb9e234435946b8d
+  - enabled: 1
+    path: Assets/Scenes/FTPDataStreamScene.unity
+    guid: 328b2b02b5f44bb4abac023555401006
+  - enabled: 1
+    path: Assets/Scenes/SSHDataStreamScene.unity
+    guid: b0fe0b4bf09c86b4cb5cf3bd9c3f3a4a
   m_configObjects: {}

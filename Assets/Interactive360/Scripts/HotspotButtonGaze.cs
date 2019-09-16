@@ -35,6 +35,10 @@ namespace Interactive360
 
         private void Awake()
         {
+            m_SelectionImage.fillAmount = 0f;
+
+            if (m_HideOnStart)
+                Hide();
             m_Button = GetComponent<Button>(); //Reference to Button component 
             m_InteractiveItem = GetComponent<VRInteractiveItem>(); //Reference to VRInteractiveItem Component 
         }
@@ -112,9 +116,9 @@ namespace Interactive360
             // The radial is now filled so the coroutine waiting for it can continue.
             m_RadialFilled = true;
 
-            // call OnClick now that the selection is complete
-            m_Button.onClick.Invoke();
-
+            // call OnClick now that the selection is complete calll manager
+          //  m_Button.onClick.Invoke();
+           StartCoroutine(m_Button.GetComponent<HotSpotsManager>().FadeOutAndIn());
 
             // Once it's been used make the radial invisible.
             Hide();
@@ -144,8 +148,8 @@ namespace Interactive360
                 Debug.Log("start coroutine");
                 m_SelectionFillRoutine = StartCoroutine(FillSelectionRadial());
             }
-            else
-                StartCoroutine(WaitAndClick());
+            //else
+            //    StartCoroutine(WaitAndClick());
         }
 
         private void HandleOut()
