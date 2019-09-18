@@ -23,11 +23,7 @@ public class HotSpotsManager : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        //if (m_InteractiveItem.IsOver && !isLoaded)
-        //{
-        //    isLoaded = true;
-        //    StartCoroutine(FadeOutAndIn(scene));
-        //}
+       
     }
    
     public IEnumerator FadeOutAndIn()

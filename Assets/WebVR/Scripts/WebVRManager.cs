@@ -101,10 +101,10 @@ public class WebVRManager : MonoBehaviour
            + GlobalName + " for proper functioning");
         }
                 
-        if (instance.dontDestroyOnLoad)
-        {
-            DontDestroyOnLoad(instance);
-        }
+        //if (instance.dontDestroyOnLoad)
+        //{
+        //    DontDestroyOnLoad(instance);
+        //}
     }
 
     private void SetTrackingSpaceType()
