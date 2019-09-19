@@ -10,7 +10,7 @@ public class GameFlow : Singleton<GameFlow>
 
     // need public GameObjects to make objects active / inactive ?
    
-    public GameObject linux;
+   
     public GameObject ftpComputer;
     public GameObject sshComputer;
     public GameObject server;
@@ -33,13 +33,7 @@ public class GameFlow : Singleton<GameFlow>
         //check to see what gameobject the gaze is on
         if (!aM.audioplayer.isPlaying)
         {
-            if (linux.GetComponent<VRInteractiveItem>().IsOver)
-            {
-                //check to see if running before running again
-                aM.linuxClip();
-
-            }
-            else if (ftpComputer.GetComponent<VRInteractiveItem>().IsOver)
+            if (ftpComputer.GetComponent<VRInteractiveItem>().IsOver)
             {
                 aM.ftpComputerClip();
             }
