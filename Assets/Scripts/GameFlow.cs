@@ -11,8 +11,9 @@ public class GameFlow : Singleton<GameFlow>
     // need public GameObjects to make objects active / inactive ?
    
    
-    public GameObject ftpComputer;
-    public GameObject sshComputer;
+    public GameObject StefaniComputer;
+    public GameObject RemiComputer;
+    public GameObject MalcolmComputer;
     public GameObject server;
     
    
@@ -33,18 +34,22 @@ public class GameFlow : Singleton<GameFlow>
         //check to see what gameobject the gaze is on
         if (!aM.audioplayer.isPlaying)
         {
-            if (ftpComputer.GetComponent<VRInteractiveItem>().IsOver)
+            if (StefaniComputer.GetComponent<VRInteractiveItem>().IsOver)
             {
-                aM.ftpComputerClip();
+                aM.StefanieComputerClip();
             }
-            else if (sshComputer.GetComponent<VRInteractiveItem>().IsOver)
+            else if (RemiComputer.GetComponent<VRInteractiveItem>().IsOver)
             {
-                aM.sshComputerClip();
+                aM.RemiComputerClip();
             }
             else if (server.GetComponent<VRInteractiveItem>().IsOver)
             {
                 aM.serverClip();
+            }else if (MalcolmComputer.GetComponent<VRInteractiveItem>().IsOver)
+            {
+                aM.MalcomComputerClip();
             }
+         
 
         }
     }

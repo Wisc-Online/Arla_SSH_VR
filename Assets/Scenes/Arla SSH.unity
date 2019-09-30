@@ -1587,7 +1587,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 1716111664439686, guid: d95dfe9eeea7731489064565a2d8b306, type: 3}
       propertyPath: m_Name
-      value: laptop_SSH
+      value: laptop_Remi
       objectReference: {fileID: 0}
     - target: {fileID: 4909941690500726, guid: d95dfe9eeea7731489064565a2d8b306, type: 3}
       propertyPath: m_LocalPosition.x
@@ -3368,7 +3368,7 @@ ParticleSystem:
     sphericalDirectionAmount: 0
     randomPositionAmount: 0
     radius:
-      value: 0.6
+      value: 1
       mode: 0
       spread: 0
       speed:
@@ -7258,6 +7258,31 @@ ParticleSystem:
         m_PostInfinity: 2
         m_RotationOrder: 4
     vectorLabel1_3: W
+--- !u!114 &548762267
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 548762264}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7fea6f8eea666334aaf9869ad8f7bcda, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!65 &548762268
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 548762264}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1.6830121, y: 0.7278528, z: 0.9415882}
+  m_Center: {x: -3.3768106, y: -0.820487, z: -0.61180663}
 --- !u!1001 &549121483
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -10803,7 +10828,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 1716111664439686, guid: d95dfe9eeea7731489064565a2d8b306, type: 3}
       propertyPath: m_Name
-      value: laptop_MITM
+      value: laptop_Malcolm
       objectReference: {fileID: 0}
     - target: {fileID: 4909941690500726, guid: d95dfe9eeea7731489064565a2d8b306, type: 3}
       propertyPath: m_LocalPosition.x
@@ -11448,7 +11473,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 1716111664439686, guid: d95dfe9eeea7731489064565a2d8b306, type: 3}
       propertyPath: m_Name
-      value: laptop_FTP
+      value: laptop_Stefani
       objectReference: {fileID: 0}
     - target: {fileID: 4909941690500726, guid: d95dfe9eeea7731489064565a2d8b306, type: 3}
       propertyPath: m_LocalPosition.x
@@ -13116,8 +13141,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   aM: {fileID: 1817884301}
-  ftpComputer: {fileID: 1390529531}
-  sshComputer: {fileID: 349073082}
+  StefaniComputer: {fileID: 1390529531}
+  RemiComputer: {fileID: 349073082}
+  MalcolmComputer: {fileID: 548762264}
   server: {fileID: 1812975490}
 --- !u!114 &1817884301
 MonoBehaviour:
@@ -13132,15 +13158,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   audioplayer: {fileID: 1249107710}
-  intro: {fileID: 8300000, guid: 4ccb3e607fc742d4481dff42ec74bd19, type: 3}
-  ftpDataStream: {fileID: 8300000, guid: edc05ee3d41ab6e45a408b8a4d03706f, type: 3}
-  sshDataStream: {fileID: 8300000, guid: 3321c9fb32bf1e5409a418fd853bf9c9, type: 3}
-  sshComputer: {fileID: 8300000, guid: bc22b00441336c847888f71c955261e1, type: 3}
-  ftpComputer: {fileID: 8300000, guid: 719e074154d862b4b971b43cd4bb4d0c, type: 3}
-  linux: {fileID: 8300000, guid: 3bf160727d967e24db43c541c29abc7a, type: 3}
-  server: {fileID: 8300000, guid: 7bec9a50e7922a244919d4fb5660eb77, type: 3}
-  operatingSystemsIcons: {fileID: 8300000, guid: e6725425d70e2004bbf323a757087679,
-    type: 3}
+  intro: {fileID: 8300000, guid: f411edf40bd2a7344b2ec02120991a20, type: 3}
+  StefanieComputer: {fileID: 8300000, guid: de0758840050c874a927f2d45e135b0e, type: 3}
+  StefaniDataStream: {fileID: 8300000, guid: f3008034d69fd384d807fdd67bf68e2f, type: 3}
+  RemiDataStream: {fileID: 8300000, guid: 5e2cd7adab603a64e8a10b00ecd12c73, type: 3}
+  RemiComputer: {fileID: 8300000, guid: 089b915551318fb4686369a5d84f9507, type: 3}
+  MalcolmComputer: {fileID: 8300000, guid: fdabf3ad6c03bec4f88ec4c831c46ab5, type: 3}
+  MalcolmDataStream: {fileID: 8300000, guid: fdabf3ad6c03bec4f88ec4c831c46ab5, type: 3}
+  server: {fileID: 8300000, guid: c3cc5990024a6d646af3cc713c7aac81, type: 3}
 --- !u!4 &1817884302
 Transform:
   m_ObjectHideFlags: 0

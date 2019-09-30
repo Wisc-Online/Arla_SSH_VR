@@ -3,20 +3,22 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class AudioManager : MonoBehaviour
+public class AudioManager : Singleton<AudioManager>
 {
     public AudioSource audioplayer;
     public AudioClip intro;
-    public AudioClip ftpDataStream;
-    public AudioClip sshDataStream;
 
-    public AudioClip sshComputer;
-    public AudioClip ftpComputer;
+    public AudioClip StefanieComputer;
+  
 
-    public AudioClip linux;
+    public AudioClip RemiComputer;
+  
+
+    public AudioClip MalcolmComputer;
+   
 
     public AudioClip server;
-    public AudioClip operatingSystemsIcons;
+   
     
 
   
@@ -26,40 +28,27 @@ public class AudioManager : MonoBehaviour
         audioplayer.clip = intro;
         audioplayer.Play();
     }
-    public void ftpDataStreamClip()
+    
+    public void RemiComputerClip()
     {
-        audioplayer.clip = ftpDataStream;
+        audioplayer.clip = RemiComputer;
+        audioplayer.Play();
+    }
+    public void StefanieComputerClip()
+    {
+        audioplayer.clip = StefanieComputer;
+        audioplayer.Play();
+    }
+    public void MalcomComputerClip()
+    {
+        audioplayer.clip = MalcolmComputer;
         audioplayer.Play();
     }
 
-    public void sshDataStreamClip()
-    {
-        audioplayer.clip = sshDataStream;
-        audioplayer.Play();
-    }
-    public void sshComputerClip()
-    {
-        audioplayer.clip = sshComputer;
-        audioplayer.Play();
-    }
-    public void ftpComputerClip()
-    {
-        audioplayer.clip = ftpComputer;
-        audioplayer.Play();
-    }
-    public void linuxClip()
-    {
-        audioplayer.clip = linux;
-        audioplayer.Play();
-    }
+    
     public void serverClip()
     {
         audioplayer.clip = server;
-        audioplayer.Play();
-    }
-    public void operatingSystemsIconsClip()
-    {
-        audioplayer.clip = operatingSystemsIcons;
         audioplayer.Play();
     }
 
