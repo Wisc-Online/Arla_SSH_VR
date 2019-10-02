@@ -51,6 +51,7 @@ namespace Interactive360
             if (m_HideOnStart)
                 Hide();
         }
+      
 
         public void Hide()
         {

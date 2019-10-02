@@ -15,6 +15,7 @@ public class GameFlow : Singleton<GameFlow>
     public GameObject RemiComputer;
     public GameObject MalcolmComputer;
     public GameObject server;
+    public bool hasPlayedIntro;
     
    
 
@@ -23,8 +24,12 @@ public class GameFlow : Singleton<GameFlow>
     public void Start()
     {
        
-   
-   PlayIntroductionAudio();
+   if (!hasPlayedIntro)
+        {
+            PlayIntroductionAudio();
+           
+        }
+  
 
   
     }
@@ -59,7 +64,7 @@ public class GameFlow : Singleton<GameFlow>
     {
 
         aM.IntroductionClip();
-     
+        hasPlayedIntro = true;
     }
 
     internal void HandleObjectDrop(GameObject gameObject)
