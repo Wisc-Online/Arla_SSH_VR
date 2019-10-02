@@ -17,4 +17,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/SSHDataStreamScene.unity
     guid: b0fe0b4bf09c86b4cb5cf3bd9c3f3a4a
+  - enabled: 1
+    path: Assets/Scenes/MIMDataStream.unity
+    guid: 646842b2327c0f34195e29fb313f34f8
   m_configObjects: {}
