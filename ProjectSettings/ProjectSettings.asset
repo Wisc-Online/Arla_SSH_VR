@@ -393,6 +393,7 @@ PlayerSettings:
     m_Devices:
     - OpenVR
     - Oculus
+    - daydream
   openGLRequireES31: 0
   openGLRequireES31AEP: 0
   openGLRequireES32: 0
