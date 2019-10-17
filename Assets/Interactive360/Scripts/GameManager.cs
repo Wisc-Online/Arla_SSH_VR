@@ -31,8 +31,8 @@ namespace Interactive360
 
         public bool useFade;
         public GameObject fadeOverlay;
-        public GameObject ControlUI;
-        public GameObject LoadingUI;
+      //  public GameObject ControlUI;
+      //  public GameObject LoadingUI;
 
 
 
@@ -83,8 +83,8 @@ namespace Interactive360
             fadeImage = fadeOverlay.GetComponent<Image>();
 
             //turn control UI off and loading UI on
-            ControlUI.SetActive(false);
-            LoadingUI.SetActive(true);
+         //   ControlUI.SetActive(false);
+      //      LoadingUI.SetActive(true);
 
             //set FadeOut to true on the animator so our image will fade out
             anim.SetBool("FadeOut", true);
@@ -105,11 +105,11 @@ namespace Interactive360
             
             //wait until the fade image is completely transparent (alpha = 0) and then turn loading UI off and control UI back on
             yield return new WaitUntil(() => fadeImage.color.a == 0);
-            LoadingUI.SetActive(false);
+          //  LoadingUI.SetActive(false);
             
             //if we have not destroyed the control UI, set it to active
-            if (ControlUI) 
-            ControlUI.SetActive(true);
+        //    if (ControlUI) 
+       //     ControlUI.SetActive(true);
 
             
 

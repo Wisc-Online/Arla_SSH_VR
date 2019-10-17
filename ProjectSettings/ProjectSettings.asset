@@ -81,7 +81,7 @@ PlayerSettings:
   bakeCollisionMeshes: 0
   forceSingleInstance: 0
   useFlipModelSwapchain: 1
-  resizableWindow: 0
+  resizableWindow: 1
   useMacAppStoreValidation: 0
   macAppStoreCategory: public.app-category.games
   gpuSkinning: 1
@@ -393,7 +393,6 @@ PlayerSettings:
     m_Devices:
     - OpenVR
     - Oculus
-    - daydream
   openGLRequireES31: 0
   openGLRequireES31AEP: 0
   openGLRequireES32: 0
@@ -782,7 +781,7 @@ PlayerSettings:
   apiCompatibilityLevel: 6
   cloudProjectId: 45ff7ca1-c2a3-4327-9b12-71c73f952eaa
   framebufferDepthMemorylessMode: 0
-  projectName: 
+  projectName: Arla SSH
   organizationId: cluft
   cloudEnabled: 0
   enableNativePlatformBackendsForNewInputSystem: 0

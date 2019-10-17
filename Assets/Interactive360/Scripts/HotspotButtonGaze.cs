@@ -121,10 +121,10 @@ namespace Interactive360
             Hide();
 
             // call OnClick now that the selection is complete call manager
-            //  m_Button.onClick.Invoke();
-            StartCoroutine(m_Button.GetComponent<HotSpotsManager>().FadeOutAndIn());
+             m_Button.onClick.Invoke();
+         StartCoroutine(   m_Button.GetComponent<HotSpotsManager>().FadeOutAndIn());
+        // StartCoroutine (  m_Button.GetComponent<HotSpotsManager>().SelectScene());
 
-        
 
         }
 
