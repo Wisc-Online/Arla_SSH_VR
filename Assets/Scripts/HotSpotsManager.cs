@@ -18,11 +18,12 @@ public class HotSpotsManager : MonoBehaviour
     string activeScene;
     Animator anim;
     Image fadeImage;
-
+    
     void Start()
     {
         scene = SceneManager.GetActiveScene();
         activeScene = "Arla SSH";
+       
     }
     void Awake()
     {
@@ -88,30 +89,28 @@ public class HotSpotsManager : MonoBehaviour
 
     public void SelectScene()
     {
-        int s = 0;
+       
         //if we want to use the fading between scenes, start the coroutine here
         if (sceneToLoad == "FTPDataStream")
         {
            SceneManager.LoadScene(1, LoadSceneMode.Single);
-            SceneManager.UnloadSceneAsync(0);
-            s = 1;
+           
         }
         else if (sceneToLoad == "MIMDataStream")
         {
             SceneManager.LoadScene(2, LoadSceneMode.Single);
-            SceneManager.UnloadSceneAsync(0);
-            s = 2;
+           
         }
         else if (sceneToLoad == "SSHDataStream")
         {
             SceneManager.LoadScene(3, LoadSceneMode.Single);
-            SceneManager.UnloadSceneAsync(0);
-            s = 3;
+           
         }
         else
         {
             SceneManager.LoadScene(0, LoadSceneMode.Single);
-            SceneManager.UnloadSceneAsync(s);
+           
+           
         }
 
        

@@ -7,19 +7,13 @@ using UnityEngine;
 public class GameFlow : Singleton<GameFlow>
 {
     public AudioManager aM;
-
-    // need public GameObjects to make objects active / inactive ?
-   
-   
     public GameObject StefaniComputer;
     public GameObject RemiComputer;
     public GameObject MalcolmComputer;
     public GameObject server;
-    public bool hasPlayedIntro;
-    
-   
 
-    
+    static bool hasPlayedIntro = false;
+
 
     public void Start()
     {
@@ -29,9 +23,7 @@ public class GameFlow : Singleton<GameFlow>
             PlayIntroductionAudio();
            
         }
-  
 
-  
     }
 
     void Update()
